@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>Бизнес-Флора | Цветы оптом и аренда</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600;700;800&family=Esteban&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="page">
+        <header class="header">
+            <div class="container">
+                <div class="logo">
+                    <h1>БИЗНЕС-ФЛОРА</h1>
+                    <p class="logo-sub">цветы оптом | аренда помещений</p>
+                </div>
+                <button class="menu-toggle" id="menuToggle">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="#home">Главная</a></li>
+                    <li><a href="#about">О компании</a></li>
+                    <li><a href="#price">Прайс</a></li>
+                    <li><a href="#rent">Аренда</a></li>
+                    <li><a href="#news">Новости</a></li>
+                    <li><a href="#contacts">Контакты</a></li>
+                </ul>
+            </div>
+        </header>
+
+        <section id="home" class="hero">
+            <div class="container hero-grid">
+                <div class="hero-content">
+                    <h2 class="hero-title">Цветы оптом <br>и коммерческая аренда</h2>
+                    <p class="hero-description">
+                        Более 25 лет надёжности. Широкий ассортимент цветов и собственные помещения в аренду в Уфе.
+                    </p>
+                    <div class="hero-buttons">
+                        <button class="btn btn-primary" id="priceBtn">Прайс</button>
+                        <button class="btn btn-secondary" id="objectsBtn">Объекты</button>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <img src="САЙТ\img\cvety.png" alt="Цветы оптом">
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="section about">
+            <div class="container">
+                <h2 class="section-title">О компании</h2>
+                <div class="about-text">
+                    <p><strong>ООО "Бизнес-Флора"</strong> — стабильный партнёр с 1998 года. Мы занимаемся оптовой торговлей цветами и растениями, а также сдаём в аренду собственную коммерческую недвижимость.</p>
+                    <p>Наши склады в Уфе всегда имеют свежие розы, тюльпаны, хризантемы и редкие сорта. Для арендаторов — гибкие условия и удобное расположение.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="price" class="section alt-bg">
+            <div class="container">
+                <h2 class="section-title">Прайс-лист на цветы</h2>
+                <div class="price-filters" id="filterButtons">
+                    <button class="filter-btn" data-cat="all">Все цветы</button>
+                    <button class="filter-btn" data-cat="tulips">Тюльпаны</button>
+                    <button class="filter-btn" data-cat="chrysanthemums">Хризантемы</button>
+                    <button class="filter-btn" data-cat="roses">Розы</button>
+                    <button class="filter-btn" data-cat="other">Другие</button>
+                </div>
+                
+                <div id="priceContent">
+                    <div id="tab-all" class="price-tab active">
+                        <h3 class="category-title">Все цветы</h3>
+                        <div class="price-layout">
+                            <div class="price-table-wrapper">
+                                <table class="price-table">
+                                    <thead><tr><th>Наименование</th><th>Цена (опт, шт)</th><th>Наличие</th></tr></thead>
+                                    <tbody>
+                                        <tr><td>Тюльпан "Белый"</td><td>38 ₽/шт</td><td>в наличии</td></tr>
+                                        <tr><td>Тюльпан "Жёлтый"</td><td>38 ₽/шт</td><td>нет в наличии</td></tr>
+                                        <tr><td>Тюльпан бахромчатый</td><td>45 ₽/шт</td><td>в наличии</td></tr>
+                                        <tr><td>Хризантема кустовая</td><td>65 ₽/шт</td><td>в наличии</td></tr>
+                                        <tr><td>Хризантема одноголовая</td><td>72 ₽/шт</td><td>под заказ</td></tr>
+                                        <tr><td>Роза 'Эквадор' 50 см</td><td>85 ₽/шт</td><td>в наличии</td></tr>
+                                        <tr><td>Роза 'Кения' 60 см</td><td>92 ₽/шт</td><td>в наличии</td></tr>
+                                        <tr><td>Роза пионовидная</td><td>120 ₽/шт</td><td>под заказ</td></tr>
+                                        <tr><td>Гербера</td><td>48 ₽/шт</td><td>в наличии</td></tr>
+                                        <tr><td>Эустома</td><td>98 ₽/шт</td><td>под заказ</td></tr>
+                                        <tr><td>Гипсофила</td><td>42 ₽/шт</td><td>в наличии</td></tr>
+                                    </tbody>
+                                </table>
+                                <p class="price-note">* Цены указаны для заказов от 100 шт. Розница обсуждается по телефону.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="tab-tulips" class="price-tab">
+                        <h3 class="category-title">Тюльпаны</h3>
+                        <div class="price-layout">
+                            <div class="price-image-left">
+                                <img src="САЙТ\img\tulpany.png" alt="Тюльпаны">
+                            </div>
+                            <div class="price-table-wrapper">
+                                <table class="price-table">
+                                    <thead><tr><th>Наименование</th><th>Цена (опт, шт)</th><th>Наличие</th></tr></thead>
+                                    <tbody>
+                                        <tr><td>Тюльпан "Белый"</td><td>38 ₽/шт</td><td>в наличии</td></tr>
+                                        <tr><td>Тюльпан "Жёлтый"</td><td>38 ₽/шт</td><td>нет в наличии</td></tr>
+                                        <tr><td>Тюльпан бахромчатый</td><td>45 ₽/шт</td><td>в наличии</td></tr>
+                                    </tbody>
+                                </table>
+                                <p class="price-note">* Цены указаны для заказов от 100 шт. Розница обсуждается по телефону.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="tab-chrysanthemums" class="price-tab">
+                        <h3 class="category-title">Хризантемы</h3>
+                        <div class="price-layout">
+                            <div class="price-image-left">
+                                <img src="САЙТ\img\hrizantemy.png" alt="Хризантемы">
+                            </div>
+                            <div class="price-table-wrapper">
+                                <table class="price-table">
+                                    <thead><tr><th>Наименование</th><th>Цена (опт, шт)</th><th>Наличие</th></tr></thead>
+                                    <tbody>
+                                        <tr><td>Хризантема кустовая</td><td>65 ₽/шт</td><td>в наличии</td></tr>
+                                        <tr><td>Хризантема одноголовая</td><td>72 ₽/шт</td><td>под заказ</td></tr>
+                                    </tbody>
+                                </table>
+                                <p class="price-note">* Цены указаны для заказов от 100 шт. Розница обсуждается по телефону.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="tab-roses" class="price-tab">
+                        <h3 class="category-title">Розы</h3>
+                        <div class="price-layout">
+                            <div class="price-image-left">
+                                <img src="САЙТ\img\rozy.png"alt="Розы">
+                            </div>
+                            <div class="price-table-wrapper">
+                                <table class="price-table">
+                                    <thead><tr><th>Наименование</th><th>Цена (опт, шт)</th><th>Наличие</th></tr></thead>
+                                    <tbody>
+                                        <tr><td>Роза 'Эквадор' 50 см</td><td>85 ₽/шт</td><td>в наличии</td></tr>
+                                        <tr><td>Роза 'Кения' 60 см</td><td>92 ₽/шт</td><td>в наличии</td></tr>
+                                        <tr><td>Роза пионовидная</td><td>120 ₽/шт</td><td>под заказ</td></tr>
+                                    </tbody>
+                                </table>
+                                <p class="price-note">* Цены указаны для заказов от 100 шт. Розница обсуждается по телефону.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="tab-other" class="price-tab">
+                        <h3 class="category-title">Другие цветы</h3>
+                        <div class="price-layout">
+                            <div class="price-image-left">
+                                <img src="САЙТ\img\drugie.png"alt="Другие цветы">
+                            </div>
+                            <div class="price-table-wrapper">
+                                <table class="price-table">
+                                    <thead><tr><th>Наименование</th><th>Цена (опт, шт)</th><th>Наличие</th></tr></thead>
+                                    <tbody>
+                                        <tr><td>Гербера</td><td>48 ₽/шт</td><td>в наличии</td></tr>
+                                        <tr><td>Эустома</td><td>98 ₽/шт</td><td>под заказ</td></tr>
+                                        <tr><td>Гипсофила</td><td>42 ₽/шт</td><td>в наличии</td></tr>
+                                    </tbody>
+                                </table>
+                                <p class="price-note">* Цены указаны для заказов от 100 шт. Розница обсуждается по телефону.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="download-price">
+                
+                </div>
+            </div>
+        </section>
+
+        <section id="rent" class="section">
+            <div class="container">
+                <h2 class="section-title">Аренда</h2>
+                <div class="rent-cards">
+                    <div class="rent-card" data-rent-title="Складской комплекс №1">
+                        <div class="rent-card-img">
+                            <img src="САЙТ\img\sklad.jpg" alt="Склад">
+                        </div>
+                        <div class="rent-card-content">
+                            <h3>Складской комплекс №1</h3>
+                            <p>450 м²</p>
+                            <p>Отопление, ворота 5м</p>
+                            <p>ул. Цветочная, 11/1</p>
+                            <div class="rent-price">550 ₽/м² в месяц</div>
+                            <button class="rent-btn">Запросить просмотр</button>
+                        </div>
+                    </div>
+                    <div class="rent-card" data-rent-title="Офисное помещение">
+                        <div class="rent-card-img">
+                            <img src="САЙТ\img\ofis.jpg"alt="Офис">
+                        </div>
+                        <div class="rent-card-content">
+                            <h3>Офисное помещение</h3>
+                            <p>120 м²</p>
+                            <p>Евроремонт, интернет</p>
+                            <p>ул. Цветочная, 11/1</p>
+                            <div class="rent-price">850 ₽/м²</div>
+                            <button class="rent-btn">Запросить просмотр</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="news" class="section alt-bg">
+            <div class="container">
+                <h2 class="section-title">Новости и акции</h2>
+                <div class="news-list">
+                    <div class="news-item">
+                        <div class="news-img">
+                            <img src="САЙТ\img\tulpany.png"alt="Тюльпаны">
+                        </div>
+                        <div class="news-text">
+                            <strong>Сезонная скидка до 20% на тюльпаны</strong>
+                            <p>При заказе от 100 штук — бесплатная доставка по Уфе.</p>
+                        </div>
+                    </div>
+                    <div class="news-item">
+                        <div class="news-img">
+                            <img src="САЙТ\img\rozy.png"alt="Розы">
+                        </div>
+                        <div class="news-text">
+                            <strong>Новые сорта роз из Эквадора</strong>
+                            <p>15 сортов с длинным стеблем, стойкость до 14 дней.</p>
+                        </div>
+                    </div>
+                    <div class="news-item">
+                        <div class="news-img">
+                            <img src="САЙТ\img\sklad.jpg"alt="Склад">
+                        </div>
+                        <div class="news-text">
+                            <strong>Свободные арендные площади</strong>
+                            <p>Склад 450 м² со скидкой при аренде до конца месяца.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contacts" class="section contacts-section">
+            <div class="container">
+                <h2 class="section-title">Контакты</h2>
+                <div class="contacts-grid">
+                    <div class="contacts-left">
+                        <p>450096, г. Уфа, ул. Цветочная, д. 11/1</p>
+                        <p>+7 (347) 123-45-67</p>
+                        <p>info@biznes-flora.ru</p>
+                        <p>Пн-Пт: 9:00–18:00 | Сб: 10:00–15:00</p>
+                        <div class="map-container">
+                            <iframe 
+                                src="https://yandex.ru/map-widget/v1/?ll=56.0184%2C54.7355&z=16&pt=56.0184,54.7355,flag&l=map" 
+                                width="100%" 
+                                height="200" 
+                                frameborder="0" 
+                                allowfullscreen>
+                            </iframe>
+                        </div>
+                    </div>
+                    <div class="contacts-right">
+                        <h3>Оставить заявку</h3>
+                        <form id="callbackForm">
+                            <div class="form-group">
+                                <input type="text" id="name" placeholder="Ваше имя" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="tel" id="phone" placeholder="Телефон" required>
+                            </div>
+                            <div class="form-group">
+                                <textarea id="comment" rows="3" placeholder="Комментарий"></textarea>
+                            </div>
+                            <button type="submit" class="submit-btn">Отправить заявку</button>
+                            <p class="form-note">Менеджер перезвонит в течение 15 минут</p>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <div class="container">
+                <p class="copyright">© 2026 ООО "Бизнес-Флора" — оптовая торговля цветами и аренда недвижимости</p>
+                <p class="legal">ИНН 0278123456 / ОГРН 1020201234567</p>
+            </div>
+        </footer>
+    </div>
+
+    <script>
+        // Переключение вкладок
+        const filterBtns = document.querySelectorAll(".filter-btn");
+        const tabs = {
+            all: document.getElementById("tab-all"),
+            tulips: document.getElementById("tab-tulips"),
+            chrysanthemums: document.getElementById("tab-chrysanthemums"),
+            roses: document.getElementById("tab-roses"),
+            other: document.getElementById("tab-other")
+        };
+
+        function showTab(category) {
+            Object.values(tabs).forEach(tab => {
+                if (tab) tab.classList.remove("active");
+            });
+            if (tabs[category]) {
+                tabs[category].classList.add("active");
+            }
+        }
+
+        if (filterBtns.length) {
+            filterBtns.forEach(btn => {
+                btn.addEventListener("click", function() {
+                    filterBtns.forEach(b => b.classList.remove("active"));
+                    this.classList.add("active");
+                    showTab(this.getAttribute("data-cat"));
+                });
+            });
+        }
+        showTab("other");
+
+        // Скачать CSV
+        const allFlowersData = [
+            { name: "Тюльпан \"Белый\"", price: 38, stock: "в наличии" },
+            { name: "Тюльпан \"Жёлтый\"", price: 38, stock: "нет в наличии" },
+            { name: "Тюльпан бахромчатый", price: 45, stock: "в наличии" },
+            { name: "Хризантема кустовая", price: 65, stock: "в наличии" },
+            { name: "Хризантема одноголовая", price: 72, stock: "под заказ" },
+            { name: "Роза 'Эквадор' 50 см", price: 85, stock: "в наличии" },
+            { name: "Роза 'Кения' 60 см", price: 92, stock: "в наличии" },
+            { name: "Роза пионовидная", price: 120, stock: "под заказ" },
+            { name: "Гербера", price: 48, stock: "в наличии" },
+            { name: "Эустома", price: 98, stock: "под заказ" },
+            { name: "Гипсофила", price: 42, stock: "в наличии" }
+        ];
+
+        document.getElementById("downloadPriceBtn")?.addEventListener("click", () => {
+            let csvRows = [["Наименование", "Цена (опт, шт)", "Наличие"]];
+            allFlowersData.forEach(item => csvRows.push([item.name, `${item.price} руб`, item.stock]));
+            const csvContent = csvRows.map(row => row.join(",")).join("\n");
+            const blob = new Blob(["\uFEFF" + csvContent], { type: "text/csv;charset=utf-8;" });
+            const link = document.createElement("a");
+            link.href = URL.createObjectURL(blob);
+            link.download = "biznes_flora_price.csv";
+            link.click();
+            URL.revokeObjectURL(link.href);
+        });
+
+        // Мобильное меню
+        const menuToggle = document.getElementById('menuToggle');
+        const navLinks = document.getElementById('navLinks');
+        menuToggle?.addEventListener('click', () => navLinks.classList.toggle('show'));
+
+        // Плавный скролл
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth' });
+                    navLinks?.classList.remove('show');
+                }
+            });
+        });
+
+        document.getElementById('priceBtn')?.addEventListener('click', () => document.getElementById('price').scrollIntoView({ behavior: 'smooth' }));
+        document.getElementById('objectsBtn')?.addEventListener('click', () => document.getElementById('rent').scrollIntoView({ behavior: 'smooth' }));
+
+        const commentField = document.getElementById('comment');
+        document.querySelectorAll('.rent-btn').forEach(btn => {
+            btn.addEventListener('click', () => {
+                const title = btn.closest('.rent-card')?.getAttribute('data-rent-title');
+                if (title && commentField) {
+                    commentField.value = `Интересует помещение: ${title}`;
+                    document.getElementById('contacts').scrollIntoView({ behavior: 'smooth' });
+                }
+            });
+        });
+
+        document.getElementById('callbackForm')?.addEventListener('submit', (e) => {
+            e.preventDefault();
+            const name = document.getElementById('name')?.value.trim() || '';
+            const phone = document.getElementById('phone')?.value.trim();
+            if (!phone) return alert('Укажите телефон для связи.');
+            alert(`Спасибо, ${name || 'клиент'}! Заявка принята. Менеджер свяжется с вами.`);
+            e.target.reset();
+            if (commentField) commentField.value = '';
+        });
+    </script>
+</body>
+</html>
